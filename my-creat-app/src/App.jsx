@@ -1,12 +1,18 @@
-import React from 'react'
+//responsavel pela troca de pag
+import { Outlet } from 'react-router-dom'
+import './App.css'
+import Menu from './components/Menu'
+import Rodape from './components/Rodape'
 
-export default function App() {
-  const aluno = 'eduardo'
-  const curso = 'ads'
+function App() {
 
-      return (
-        <>
-        <h1>oi</h1>
-        </>
-      )
-    }
+  return (
+    <>
+      <Menu/> 
+      <Outlet/>
+      <Rodape/>
+    </>
+  )
+}
+
+export default App
