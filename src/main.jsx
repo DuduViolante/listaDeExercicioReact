@@ -6,10 +6,10 @@ import './index.css'
 // {} para importat metodos
 // RouterProvider disponibiliza as rotas para o sistema
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './routes/Home/index.jsx'
 import Aparelhos from './routes/Aparelhos/index.jsx'
-// import VisualizarAparelhos from './routes/VisualizarAparelhos/index.jsx'
 import Error from './routes/Error/index.jsx'
+import Home from './routes/Home/index.jsx'
+// import VisualizarProdutos from './routes/VisualizarAparelhos/index.jsx'
 
 const router = createBrowserRouter([
   {
