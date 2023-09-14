@@ -7,7 +7,7 @@ export default function Menu(){
             {/* Link especifico do router dom */}
             <Link to='/'>Home</Link>
             <span> | </span>
-            <Link to='/produtos'>Aparelhos</Link>
+            <Link to='/produtos'>Produtos</Link>
             
         </nav>
     )

@@ -1,10 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom"
 // useParams pode passar 1 ou mais parametros (objeto)
-import { listaAparelhos } from "../../components/VisualizarAparelhos"
+import { listaProdutos } from "../../components/listaProdutos"
 
-export default function VisualizarAparelhos(){
+export default function EditarProdutos(){
 
-    const lista = listaAparelhos
+    const lista = listaProdutos
     const navegacao = useNavigate()
     const {id} = useParams()
 
@@ -12,13 +12,13 @@ export default function VisualizarAparelhos(){
     const produto = proc[0]
 
     const salvar = () => {
-        alert(`Produto: ${aparelho.nome} visualizado com sucesso!`)
-        return navegacao('/aparelho')
+        alert(`Produto: ${produto.nome} editado com sucesso!`)
+        return navegacao('/produtos')
     }  
     return(
         <main>
-            <h1>Visualizar Aparelhos</h1>
-            <p>Visualizando o aparelho: {produto.nome}</p>
+            <h1>Editar Produtos</h1>
+            <p>Editando os dados do produto: {produto.nome}</p>
             <button onClick={salvar}>Salvar</button>
         </main>
     )

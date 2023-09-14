@@ -6,10 +6,10 @@ import './index.css'
 // {} para importat metodos
 // RouterProvider disponibiliza as rotas para o sistema
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Aparelhos from './routes/Aparelhos/index.jsx'
-import Error from './routes/Error/index.jsx'
 import Home from './routes/Home/index.jsx'
-// import VisualizarProdutos from './routes/VisualizarAparelhos/index.jsx'
+import Produtos from './routes/Produtos/Index.jsx'
+import EditarProdutos from './routes/EditarProdutos/Index.jsx'
+import Error from './routes/Error/Index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,19 +23,19 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: '/aparelhos',
-        element: <Aparelhos/>
+        path: '/produtos',
+        element: <Produtos/>
       },
       {
         //passar valor para
-        path: '/aparelhos/visualizar/:id',
-        element: <VisualizarProdutos/>
+        path: '/produtos/editar/:id',
+        element: <EditarProdutos/>
       },
-      // {
-      //   // endereco certo porem nao existe mais (nao esta habilitado)
-      //   path: '/antiga',
-      //   element: <Navigate to='/Home'/>
-      // }
+      {
+        // endereco certo porem nao existe mais (nao esta habilitado)
+        path: '/antiga',
+        element: <Navigate to='/Home'/>
+      }
     ] 
   }
 ])
