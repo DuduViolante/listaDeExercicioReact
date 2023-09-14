@@ -7,9 +7,9 @@ import './index.css'
 // RouterProvider disponibiliza as rotas para o sistema
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
-import Produtos from './routes/Produtos/Index.jsx'
-import EditarProdutos from './routes/EditarProdutos/Index.jsx'
-import Error from './routes/Error/Index.jsx'
+import Aparelhos from './routes/Aparelhos/index.jsx'
+// import VisualizarAparelhos from './routes/VisualizarAparelhos/index.jsx'
+import Error from './routes/Error/index.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,13 +23,13 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: '/produtos',
-        element: <Produtos/>
+        path: '/aparelhos',
+        element: <Aparelhos/>
       },
       {
         //passar valor para
-        path: '/produtos/editar/:id',
-        element: <EditarProdutos/>
+        path: '/aparelhos/visualizar/:id',
+        element: <VisualizarProdutos/>
       },
       // {
       //   // endereco certo porem nao existe mais (nao esta habilitado)

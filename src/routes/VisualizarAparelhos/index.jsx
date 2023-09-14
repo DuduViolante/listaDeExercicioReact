@@ -12,7 +12,7 @@ export default function VisualizarAparelhos(){
     const produto = proc[0]
 
     const salvar = () => {
-        alert(`Produto: ${aparelho.nome} editado com sucesso!`)
+        alert(`Produto: ${aparelho.nome} visualizado com sucesso!`)
         return navegacao('/aparelho')
     }  
     return(
